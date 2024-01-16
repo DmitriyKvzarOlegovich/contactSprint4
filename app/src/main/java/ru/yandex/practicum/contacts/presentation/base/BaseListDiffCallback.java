@@ -4,9 +4,8 @@ import androidx.recyclerview.widget.DiffUtil;
 
 import ru.yandex.practicum.contacts.presentation.sort.SortTypeUI;
 
-public class BaseListDiffCallback<T extends ListDiffInterface > extends DiffUtil.ItemCallback<T> {
+public class BaseListDiffCallback<T extends ListDiffInterface<T> > extends DiffUtil.ItemCallback<T> {
 
-    T trash;
     @Override
 
     public boolean areItemsTheSame( T oldItem, T newIt) {
